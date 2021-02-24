@@ -15,7 +15,7 @@ class Persona:
             self.__mensaje = "Reprobado"
         else:
             self.__mensaje = "Aprobado"
-
+//este es  un cioomentars
     def mostrar(self):
         self.calcularPromedio()
         print("Nombre :" + self.__nombre + " Apellido :" + self.__apellido + " Promedio:", self.__promedio, self.__mensaje)
