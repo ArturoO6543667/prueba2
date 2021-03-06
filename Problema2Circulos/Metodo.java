@@ -1,8 +1,9 @@
+//:*
 package Problema2Circulos;
 
 public class Metodo
 {
-    private  double     x;
+    private double x;
     private double y;
     private double radio1;
     private double x2;
