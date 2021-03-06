@@ -10,15 +10,15 @@ public class Metodo
     private double radio2;
     private double distancia_centros;
     private double distancia_radios;
-    private double diferencia_radios;
     //public Metodo(){ }
-    public Metodo(double x, double y , double r, double x2, double y2,double r2){
-        this.x = x ;
-        this.y = y;
-        this.radio1 = r;
-        this.x2 = x2 ;
-        this.y2 =y2 ;
-        this.radio2= r2;
+    public Metodo(double CoordenadaX1, double CoordenadaY1 , double Radio1, double CoordenadaX2, double CoordenadaY2,double
+                  Radio2){
+        this.x = CoordenadaX1 ;
+        this.y = CoordenadaY1;
+        this.radio1 =Radio1;
+        this.x2 = CoordenadaX2 ;
+        this.y2 =CoordenadaY2 ;
+        this.radio2= Radio2;
     }
     public void calcular_distancia(){
         double d1 = Math.pow((this.x - this.x2),2);
@@ -37,6 +37,7 @@ public class Metodo
         return diferencia;
     }
     public String verificacion(){
+        String var= "esto no funca";
         if (this.distancia_centros > this.distancia_radios){
             return " no se intersectan, exteriores";
         }
@@ -49,10 +50,18 @@ public class Metodo
         if ( this.distancia_centros == this.distancia_radios){
             return "intersectan, tangentes exteriores";
         }
+        if(this.distancia_centros==0 && (this.x==this.x2 && this.y ==this.y2)){
+            return "circunferencias iguales";
+        }
         if(this.distancia_centros == diferencia_radios()){
             return "intersectan, tangentes interiores";
         }
-        else return "no se intersectan";
+
+        if(this.distancia_centros == 0 &&(this.x != this.x2 || this.y != this.y2)){
+            return "no se intersectan , mismo radio";
+        }
+
+        else return var;
 
     }
     public String ejecutar(){

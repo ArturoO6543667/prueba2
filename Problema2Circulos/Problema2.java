@@ -3,7 +3,7 @@ package Problema2Circulos;
 public class Problema2
 {
     public static void main(String[] args) {
-        String respuesta, respuesta2,respuesta3;
+        String respuesta, respuesta2,respuesta3,respuesta4;
         Metodo a  = new Metodo(5,6,3.5,10,5,3);
         respuesta = a.ejecutar();
         System.out.println(a.toString()  + " Respuesta : " + respuesta  );
@@ -15,5 +15,9 @@ public class Problema2
         Metodo c = new Metodo(5 , 4.5 ,3 , 6,5,4.5);
         respuesta3 = c.ejecutar();
         System.out.println(c.toString() + "Respuesta3 :" + respuesta3);
+
+        Metodo d = new Metodo(5,5,1,5,5,1);
+        respuesta4 = d.ejecutar();
+        System.out.printf(d.toString() + "Respeusta4 :" + respuesta4);
     }
 }
