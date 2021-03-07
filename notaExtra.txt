@@ -1,0 +1,1 @@
+esta nota indicara si puedo subir contenido desde una rama al main
