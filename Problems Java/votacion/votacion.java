@@ -70,7 +70,7 @@ public class votacion {
 
         // sry puse muchos mensajes pero era porque me confunfia con los numeros :(
 
-        // no te preocupes :D
+        // listo :3!!
 
     }
     // hasta aqui obtuve los datos ingresados convertidos a string,
